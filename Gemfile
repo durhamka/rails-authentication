@@ -15,6 +15,8 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'capybara'
+  gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
 group :production do
