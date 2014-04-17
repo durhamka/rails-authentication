@@ -1,9 +1,14 @@
-<%= form_for @user do |f| %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
+<div class="registration_form">
+  <h1>Register</h1>
+  <%= form_for @user do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
 
-  <%= f.label :password %>
-  <%= f.text_field :password %>
+    <div class="password">
+      <%= f.label :password %>
+      <%= f.text_field :password %><br>
+    </div>
 
-  <%= f.submit 'Register' %>
-<% end %>
+    <%= f.submit 'Register', class: "button" %>
+  <% end %>
+</div>
